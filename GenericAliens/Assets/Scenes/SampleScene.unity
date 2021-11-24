@@ -344,7 +344,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 7855692558149456362, guid: 8d55edf219a9fa648a695a45262b5c80, type: 3}
       propertyPath: gravity
-      value: -29.43
+      value: -58.86
+      objectReference: {fileID: 0}
+    - target: {fileID: 7855692558149456362, guid: 8d55edf219a9fa648a695a45262b5c80, type: 3}
+      propertyPath: jumpHeight
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 7855692558149456372, guid: 8d55edf219a9fa648a695a45262b5c80, type: 3}
       propertyPath: m_Name
