@@ -425,11 +425,42 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerBody: {fileID: 1693650255}
   mouseSensitivity: 500
+--- !u!1 &1693650254 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7855692558149456372, guid: 8d55edf219a9fa648a695a45262b5c80, type: 3}
+  m_PrefabInstance: {fileID: 7855692558765038778}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &1693650255 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7855692558149456373, guid: 8d55edf219a9fa648a695a45262b5c80, type: 3}
   m_PrefabInstance: {fileID: 7855692558765038778}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1693650256 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7855692558149456362, guid: 8d55edf219a9fa648a695a45262b5c80, type: 3}
+  m_PrefabInstance: {fileID: 7855692558765038778}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1693650254}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b687110bcc5f49c448b99bba1b239d2b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1693650258
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1693650254}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4b40c9252714d1e4781dda03965d359e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fallMultiplier: 2.5
+  lowJumpMultiplier: 2
+  moving: {fileID: 1693650256}
 --- !u!1001 &7855692558765038778
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -439,7 +470,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 7855692558149456362, guid: 8d55edf219a9fa648a695a45262b5c80, type: 3}
       propertyPath: gravity
-      value: -58.86
+      value: -9.81
       objectReference: {fileID: 0}
     - target: {fileID: 7855692558149456362, guid: 8d55edf219a9fa648a695a45262b5c80, type: 3}
       propertyPath: jumpHeight

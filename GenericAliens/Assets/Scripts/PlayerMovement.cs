@@ -22,7 +22,7 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] float gravity = -9.81f;
 
     //Vectors
-    Vector3 velocity;
+    [HideInInspector] public Vector3 velocity;
     Vector3 move;
     Vector2 moveInput;
 
