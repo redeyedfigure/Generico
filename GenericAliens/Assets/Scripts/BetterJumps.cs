@@ -19,7 +19,7 @@ public class BetterJumps : MonoBehaviour
         {
             moving.velocity += Vector3.up * Physics.gravity.y * (fallMultiplier - 1) * Time.deltaTime;
         } 
-        else if(controller.velocity.y > 0 && !Input.GetButton("Jump"))
+        else if(controller.velocity.y > 0 && !Input.GetButtonDown("Jump"))
         {
             moving.velocity += Vector3.up * Physics.gravity.y * (lowJumpMultiplier - 1) * Time.deltaTime;
         }
