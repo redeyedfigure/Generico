@@ -8,6 +8,7 @@ public class Gun : MonoBehaviour
     public GameObject Flare;
     public int GunRecoilTime;
     private bool CoroutineIsNotRunning = true;
+    public CameraShake cameraShake;
 
     IEnumerator DisableFlare(float waitTime)
     {
@@ -21,10 +22,11 @@ public class Gun : MonoBehaviour
     void Update()
     {
         
-        if (Input.GetKeyDown(KeyCode.Mouse0) && CoroutineIsNotRunning == true)
+        if (Input.GetMouseButtonDown(0) && CoroutineIsNotRunning == true)
         {
             Flare.SetActive(true);
             StartCoroutine(DisableFlare(GunRecoilTime));
+            StartCoroutine(cameraShake.Shake(.15f, .4f));
 
         }
 
